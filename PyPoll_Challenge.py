@@ -49,6 +49,7 @@ with open(file_to_load) as election_data:
             candidate_votes[candidate_name] = 0
 
        candidate_votes[candidate_name] += 1
+
         # make a list of counties and find total number of votes each candidate received
        county_name = row[1]
        if county_name not in county_list:
@@ -82,7 +83,7 @@ winning_candidate_summary = (
     f"\n\n-------------------------\n")
 print(winning_candidate_summary)
 
-# Calculate Percentage of votes each county won
+# Calculate Percentage of votes each county won and determine the county with the largest turnout
 print("County Votes:")
 for county_name in county_votes:
     c_votes = county_votes[county_name]
@@ -105,6 +106,7 @@ with open(file_to_save, "w") as txt_file:
 
 # Write the results to the file
     txt_file.write(f"\nElection Results\n---------------------\nTotal votes: {total_votes}\n---------------------\n")
+    txt_file.write("Candidate Votes:\n")
     for candidate_name in candidate_votes:
         votes = candidate_votes[candidate_name]
         vote_percentage = float(votes)/float(total_votes) * 100
