@@ -47,10 +47,20 @@ More details can be found in the summary below. So W=without further delay, the 
 - Winning Vote Count: 272892
 - Winning Percentage: 73.8%
 
+The results above were also written to a .txt document in order to facilitate sharing of the results. Because I know you're curious (and because it was actually the most complicated portion), I will share the code here:
+
+![Write to txt code]{https://github.com/Olibabba/Week3_Python_HW/blob/main/Resources/Write_txt_code.png}
+
 ## Election and Audit Summary
 
-Add columns, 
+I think it is clear that this proof of concept was a success, and I believe that with some modifications the accuracy and time saved could be brought to any election. I propose that *Olibabba Original Outomes &copy;* be hired to expand upon this success to add a versatile election auditing solution to your toolbelt.
 
-Create multiple documents and summaries
+There are two primary changes needed to make this program usable on any election:
 
-Though there were nearly 37000 votes cast in this precinct, a much larger area and population could still be calculated quickly, since there are only three columns to look at. 
+-- Add functionality to input which column the cadidate and county is in, in case the csv format is not the same as this one.
+
+-- Adjust the code to parse multiple elections and precints in one data set.. 
+
+As you can see from my examples above, I can also create multiple documents and summaries to be distrubuted to an email list or website of your choosing immedietly upon completion of the audit.
+
+My one and only offer to do this comes at the low price of **Exposure!**
