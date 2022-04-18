@@ -47,7 +47,10 @@ More details can be found in the summary below. So Without further delay, the re
 - Winning Vote Count: 272892
 - Winning Percentage: 73.8%
 
-The results above were also written to a .txt document in order to facilitate sharing of the results. Because I know you're curious (and because it was actually the most complicated portion), I will share the code here:
+I order to provide an immediate audit, the program prints a summary to the command line after it is written. The summary looks like this:
+![Terminal Output](https://github.com/Olibabba/Week3_Python_HW/blob/main/Resources/Terminal_output.png)
+
+The summary above is also written to a .txt document in order to facilitate sharing of the results. Because I know you're curious (and because it was actually the most complicated portion), I will share the code here:
 
 ![Write to txt code](https://github.com/Olibabba/Week3_Python_HW/blob/main/Resources/Write_txt_code.png)
 
