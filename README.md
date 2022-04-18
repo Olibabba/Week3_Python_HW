@@ -6,9 +6,23 @@ The tri-county area containing Jefferson, Denver, and Arapahoe counties requeste
 
 ## Election and Audit Results
 
-The method to 
+A great thing about election data is it's simplicity. With each vote occupying one row, we can capture all of our data by analyzing each row in one pass. In fact counting the total votes is essentialy as easy as this short code:
+```
+for row in file_reader:
+       total_votes += 1
+```
+Creating a list of candidates and tallying their votes is only a little more complicated:
+```
+       candidate_name = row[2]
+       if candidate_name not in candidate_options: 
+            candidate_options.append(candidate_name)
+            candidate_votes[candidate_name] = 0
 
-Without further delay, the results of the election are as follows:
+       candidate_votes[candidate_name] += 1
+```
+The county tally is nearly identical to the candidate tally above. Of course much of the complexity comes in the planning. In order to complete the analysis and calculations in one pass, we needed to initialize and manage 11 variables!
+
+More details can be found in the summary below. So W=without further delay, the results of the election are as follows:
 
 #### Total votes: cast in this congressional election?
 - 369711
@@ -35,7 +49,8 @@ Without further delay, the results of the election are as follows:
 
 ## Election and Audit Summary
 
-```
-for row in file_reader:
-       total_votes += 1
-```
+Add columns, 
+
+Create multiple documents and summaries
+
+Though there were nearly 37000 votes cast in this precinct, a much larger area and population could still be calculated quickly, since there are only three columns to look at. 

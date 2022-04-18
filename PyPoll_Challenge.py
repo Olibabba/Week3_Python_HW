@@ -66,7 +66,7 @@ print("----")
 print(f'Vote tally check. Sum of candidate votes = {sum(candidate_votes.values())}')
 print(f'Vote tally check. Sum of county votes = {sum(county_votes.values())}\n')
 print(f"Election Results\n---------------------\nTotal votes: {total_votes}\n---------------------\n")
-# Calculate Percentage of votes each candidate won
+# Calculate Percentage of votes each candidate won and determine the winner
 for candidate_name in candidate_votes:
     votes = candidate_votes[candidate_name]
     vote_percentage = float(votes) / float(total_votes) * 100
