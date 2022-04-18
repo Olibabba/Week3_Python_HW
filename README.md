@@ -6,7 +6,7 @@ The tri-county area containing Jefferson, Denver, and Arapahoe counties requeste
 
 ## Election and Audit Results
 
-A great thing about election data is it's simplicity. With each vote occupying one row, we can capture all of our data by analyzing each row in one pass. In fact counting the total votes is essentialy as easy as this short code:
+A great thing about election data is it's simplicity. With each vote occupying one row, we can capture all of our data by analyzing each row in one pass through. In fact counting the total votes is essentialy as easy as this short code:
 ```
 for row in file_reader:
        total_votes += 1
@@ -22,7 +22,7 @@ Creating a list of candidates and tallying their votes is only a little more com
 ```
 The county tally is nearly identical to the candidate tally above. Of course much of the complexity comes in the planning. In order to complete the analysis and calculations in one pass, we needed to initialize and manage 11 variables!
 
-More details can be found in the summary below. So W=without further delay, the results of the election are as follows:
+More details can be found in the summary below. So Without further delay, the results of the election are as follows:
 
 #### Total votes: cast in this congressional election?
 - 369711
@@ -49,17 +49,17 @@ More details can be found in the summary below. So W=without further delay, the 
 
 The results above were also written to a .txt document in order to facilitate sharing of the results. Because I know you're curious (and because it was actually the most complicated portion), I will share the code here:
 
-![Write to txt code]{https://github.com/Olibabba/Week3_Python_HW/blob/main/Resources/Write_txt_code.png}
+![Write to txt code](https://github.com/Olibabba/Week3_Python_HW/blob/main/Resources/Write_txt_code.png)
 
 ## Election and Audit Summary
 
-I think it is clear that this proof of concept was a success, and I believe that with some modifications the accuracy and time saved could be brought to any election. I propose that *Olibabba Original Outomes &copy;* be hired to expand upon this success to add a versatile election auditing solution to your toolbelt.
+I think it is clear that this proof of concept was a success, and I believe that with some modifications the accuracy and time saved could be brought to any election. I propose that *Olibabba Original Outcomes&copy;* be hired to expand upon this success in order to add a versatile election auditing solution to your toolbelt.
 
 There are two primary changes needed to make this program usable on any election:
 
 -- Add functionality to input which column the cadidate and county is in, in case the csv format is not the same as this one.
 
--- Adjust the code to parse multiple elections and precints in one data set.. 
+-- Adjust the code to parse multiple elections and precints contained in one data set.
 
 As you can see from my examples above, I can also create multiple documents and summaries to be distrubuted to an email list or website of your choosing immedietly upon completion of the audit.
 
